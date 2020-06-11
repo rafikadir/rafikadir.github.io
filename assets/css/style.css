@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #2a323a;
 }
 
 #hero p {
@@ -330,7 +330,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .section-title h2 {
@@ -367,6 +367,8 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
@@ -645,7 +647,7 @@ section {
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -659,6 +661,10 @@ section {
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a i {
+  border: 1px solid #45505b;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
