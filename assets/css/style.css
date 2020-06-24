@@ -591,19 +591,21 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
+  box-shadow: hsl(0, 0%, 80%) 0 0 16px;
+  border-radius: 5px;
 }
 
 .portfolio .portfolio-wrap::before {
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  z-index: 1;
+  height: 90%;
   content: "";
-  background: rgba(255, 255, 255, 0.7);
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+  transform: translate(-50%, -50%);
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -622,46 +624,18 @@ section {
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #fff;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0 0 5px 0;
+  margin: 0 0 20px 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -670,7 +644,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #000;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -678,35 +652,25 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a i {
-  border: 1px solid #45505b;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: .5s;
+  padding: 3px;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.portfolio .portfolio-wrap .portfolio-links a i:hover {
   color: #148af9;
+  border: 1px solid #148af9;
+  border-radius: 50px;
 }
 
 .portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
+width: 90%;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
