@@ -591,8 +591,7 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
-  box-shadow: hsl(0, 0%, 80%) 0 0 16px;
-  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
 }
 
 .portfolio .portfolio-wrap::before {
