@@ -1,0 +1,143 @@
+@media only screen and (max-width:575px) {
+    .navbar {
+        padding: 10px 0px !important;
+    }
+    .navbar-toggler-icon {
+        width: 20px !important;
+    }
+    .navbar-toggler {
+        padding: 0 10px !important;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 !important;
+    }
+    .navbar-collapse {
+        margin-top: 20px;
+    }
+    .section-title h2::before {
+        top: 25px;
+        right: 0;
+    }
+
+    .banner-section {
+        height: 100%;
+        padding: 60px 10px;
+        text-align: center;
+    }
+
+    .banner-section .banner-text h4 {
+        font-size: 15px;
+    }
+    .banner-section .banner-text h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .banner-img {
+        margin-top: 30px;
+    }
+    .all-btn {
+        padding: 10px 10px;
+        font-size: 11px;
+    }
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+    .about-text ul li {
+        margin: 0 0 10px;
+        font-size: 13px;
+    }
+    .about-text ul li span {
+        margin-right: 18px;
+    }
+    .about-text {
+        padding: 20px 0;
+    }
+
+    .about-text .info {
+        margin-bottom: 30px !important;
+    }
+    .about-text ul li i {
+        margin-right: 7px;
+        font-size: 14px;
+    }
+    .about-text ul {
+        text-align: center;
+    }
+    .edu-area {
+        padding: 20px;
+    }
+    .edu-area .edu-box {
+        margin-bottom: 25px;
+        padding-left: 20px;
+        height: 100%;
+    }
+    .edu-area .edu-box h4 {
+        font-size: 20px;
+    }
+    .icon-section .icon-img {
+        margin-bottom: 0;
+    }
+
+    .counter-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .counter-text h1 {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .project-menu ul li {
+        margin: 0 10px 10px;
+    }
+    .project-menu ul {
+        padding: 10px !important;
+        border-radius: 0px
+    }
+
+    .contact-form {
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: 0px 2px 15px #00ffff75;
+        margin-bottom: 30px;
+        background: #f5f5f5;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width:576px) { 
+    .banner-section {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media only screen and (max-width:768px)  { 
+    .aboout-img {
+        margin-bottom: 35px;
+    }
+
+    .skill-section .skill-box {
+        padding: 16px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+    .counter-text h1 {
+        margin-bottom: 10px;
+        font-size: 35px;
+        font-weight: 700;
+        color: #fa6d59;
+    }
+ }
