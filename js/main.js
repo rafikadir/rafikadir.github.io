@@ -79,4 +79,6 @@ jQuery(function($){
         $("html, body").animate({ scrollTop: "0" },  500);
     });
 
+    //Pre loader
+    jQuery(window).on('load',function(){jQuery('.preloader').fadeOut(1500);});
 });
