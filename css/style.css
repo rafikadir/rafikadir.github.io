@@ -353,7 +353,7 @@ ul {
 }
 /* Service CSS */
 .service-card {
-    box-shadow: 0px 2px 15px #00ffff73;
+    box-shadow: 0px 15px 20px rgb(5 66 125 / 17%);
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -397,7 +397,7 @@ ul {
     background: #f5f5f5;
 }
 .project-box {
-    box-shadow: 0px 2px 15px #00ffff73;
+    box-shadow: 0px 2px 15px #00000024;
     margin-bottom: 30px;
     background: #fff;
     position: relative;
@@ -555,6 +555,42 @@ footer p {
     font-size: 16px;
     margin-bottom: 0;
 }
+/* Footer CSS End */
+
+/*========= Instagram Page ========*/
+.eapps-link {
+    display: none !important;
+}
+
+.insta-feed {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.crt-widget .crt-load-more {
+    background: #fa6d59 !important;
+    color: #fff !important;
+    padding: 13px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #fa6d59 !important;
+    transition: .5s;
+    margin-top: 30px;
+}
+.crt-widget .crt-load-more:hover {
+    background: #fff !important;
+    color: #fa6d59 !important;
+}
+
+.crt-grid-post.crt-post-has-image .crt-grid-post-image {
+    border: 1px solid #efe2e2;
+}
+
 .back-top {
     position: fixed;
     cursor: pointer;
@@ -581,6 +617,7 @@ footer p {
     visibility: visible;
     bottom: 20px;
 }
+
 
 /* Animation css */
 @keyframes fadeInDown{
