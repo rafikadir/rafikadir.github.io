@@ -629,7 +629,7 @@ footer p {
 }
 
 /* Preloader CSS */
-/* .preloader {
+.preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -710,4 +710,4 @@ footer p {
               transform: perspective(140px) rotateY(180deg);
       opacity: 0; 
     }
-} */
+}
