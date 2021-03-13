@@ -58,7 +58,7 @@ jQuery(function($){
         loop:true,
         nav:false,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 1500,
         autoplayHoverPause: true,
         smartSpeed:800,
