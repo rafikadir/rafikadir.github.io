@@ -444,15 +444,23 @@ button:focus {
     padding: 20px;
 }
 .project-box .project-link h4 {
-    display: inline-block;
+    display: block;
     margin: 0;
+    margin-bottom: 10px;
 }
-.project-box .project-link a i {
-    color: #bd8080;
-    float: right;
-    padding: 10px;
-    border: 1px solid #bd8080;
-    border-radius: 21px;
+.project-box .project-link a {
+    background: #ff4747;
+    display: inline-block;
+    border: 1px solid;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #fff;
+}
+.project-box .project-img {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 #Container .mix {
     display: none;
