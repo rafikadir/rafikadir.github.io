@@ -446,20 +446,36 @@ button:focus {
 .project-box .project-link h4 {
     display: block;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 30%);
+    font-size: 18px;
 }
-.project-box .project-link a {
-    background: #ff4747;
+.project-box .project-link .live-link {
     display: inline-block;
-    border: 1px solid;
+    border: 1px solid #b8aeae;
     padding: 5px 30px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-right: 5px;
+    color: #817a7a;
+    transition: .5s;
+    font-weight: 500;
+}
+.project-box .project-link a i {
+    color: #fa6d59;
+    border: 1px solid #fa6d59;
+    padding: 9px 15px;
+    transition: .5s;
+}
+.project-box .project-link a i:hover {
+    background: #fa6d59;
     color: #fff;
 }
+.project-box .project-link .live-link:hover {
+    background: #817a7a;
+    border: 1px solid #817a7a;
+    color: #fff;
+}
+
 .project-box .project-img {
-    padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 #Container .mix {
