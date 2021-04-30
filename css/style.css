@@ -26,8 +26,8 @@ img {
     max-width: 100%;
 }
 p {
-    color: #9090a0;
-    font-size: 17px;
+    color: #7f7f83;
+    font-size: 19px;
     font-family: 'Jost', sans-serif;
 }
 .pt-100 {
@@ -148,6 +148,46 @@ button:focus {
     transform: rotate(-90deg);
     font-size: 100px;
 }
+.aboout-img {
+    position: relative;
+    z-index: 0;
+}
+.aboout-img:hover.aboout-img::before {
+    transform: rotate(-4deg);
+    opacity:1;
+}
+.aboout-img:hover.aboout-img::after {
+    transform: rotate(-9deg);
+    opacity: .7;
+}
+.aboout-img::before {
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    background: #fa6d59;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    transition:.5s;
+    opacity:0;
+}
+.aboout-img::after {
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    background: #fa6d59;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    transition:.5s;
+    opacity: 0;
+}
 .aboout-img img{
     box-shadow: 0px 0px 25px 0px rgba(69, 67, 96, 0.1);
     border-radius: 30px;
@@ -224,6 +264,49 @@ button:focus {
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 30px;
+}
+.skill-box {
+    position: relative;
+    transition:.5s;
+}
+.skill-box::before {
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    background: #fa6d59;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    transition:.5s;
+    opacity:0;
+}
+.skill-box::after {
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    background: #fa6d59;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    transition:.5s;
+    opacity: 0;
+}
+.skill-box:hover.skill-box {
+    box-shadow:none;
+}
+.skill-box:hover.skill-box::before {
+    transform: rotate(-4deg);
+    opacity:1;
+}
+.skill-box:hover.skill-box::after{
+    transform: rotate(-9deg);
+    opacity: .7;
 }
 .skill-section .skill-box h6{
     margin-bottom: 30px;
@@ -314,7 +397,6 @@ button:focus {
 }
 
 /* Icons CSS */
-
 .icon-section {
    text-align: center;
 }
@@ -331,6 +413,7 @@ button:focus {
     transition: all linear .3s;
     transform: scale(1);
     background: #fff;
+    z-index: 1;
 }
 .icon-section .icon-img img{
     width: 60px;
