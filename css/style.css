@@ -128,6 +128,9 @@ button:focus {
     animation: 0.5s ease-in-out fadeInDown;
     box-shadow: 0 3px 10px 0 rgb(6 82 221 / 10%);
 }
+.navbar-brand img {
+    max-width: 150px;
+}
 /* Banner CSS */
 .banner-section {
     height: 100vh;
@@ -143,12 +146,6 @@ button:focus {
     border-radius: 50%;
     padding: 5px;
 }
-/* .banner-img::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-} */
 .banner-section .banner-text h4 {
     margin-bottom: 30px;
 }
