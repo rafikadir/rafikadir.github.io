@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
 
 /* Common CSS */
 body {
-    /* font-family: 'Jost', sans-serif; */
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
@@ -28,8 +26,9 @@ img {
 }
 p {
     color: #6D7077;
-    font-size: 19px;
-    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
 }
 .pt-100 {
     padding-top: 100px;
@@ -80,6 +79,8 @@ ul {
     position: relative;
     display: inline-block;
     line-height: 1;
+    font-weight: 700;
+    font-size: 35px;
 }
 .section-title h2::before {
     position: absolute;
@@ -108,8 +109,8 @@ button:focus {
     right: 0;
 }
 .navbar-nav a.nav-link {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     text-transform: capitalize;
     font-size: 17px;
     color: #171718 !important;
@@ -155,7 +156,7 @@ button:focus {
     color: #0652DD;
     font-size: 75px;
     font-weight: 600;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     text-transform: capitalize;
 }
 .banner-section .banner-text p{
@@ -239,6 +240,7 @@ button:focus {
 }
 .about-text p {
     margin-bottom: 25px;
+    max-width: 570px;
 }
 .font-weight-bold {
     font-weight: 700;
@@ -251,7 +253,7 @@ button:focus {
 }
 
 .about-text h4 {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -418,6 +420,9 @@ button:focus {
     bottom: 0;
     border-radius: 30px;
 }
+.edu-area .edu-box h6{
+    font-size: 14px;
+}
 .edu-area .edu-box h4{
     font-size: 22px;
 }
@@ -463,9 +468,10 @@ button:focus {
 
 .icon-img .icon-name p{
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 8px 0px;
     font-size: 14px;
+    color: #171717;
 }
 /* Service CSS */
 .service-card {
@@ -512,6 +518,8 @@ button:focus {
     background: #fff;
     position: relative;
     overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .project-box h6 {
     position: absolute;
@@ -634,6 +642,67 @@ button:focus {
     margin: 10px;
 }
 
+/* Blog */
+.blog-area {
+    box-shadow: 0 10px 30px 0 rgb(6 82 221 / 15%);
+    margin-bottom: 30px;
+    border-radius: 40px;
+}
+.blog-area:hover .blog-img img {
+    transform:scale(1.1);
+}
+.blog-body {
+    padding: 40px;
+}
+.blog-img {
+    overflow: hidden;
+    border-radius: 40px;
+}
+.blog-img img {
+    border-radius:40px;
+    transition:.5s;
+}
+.blog-info {
+    margin-bottom: 25px;
+}
+
+.blog-info ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.blog-info ul li a {
+    text-decoration: none;
+    color: #171717;
+}
+.blog-info ul li i {
+    color: #0652DD;
+    font-size: 14px;
+    margin-right: 3px;
+}
+.blog-text h3 a {
+    font-size:24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #171717;
+}
+.blog-text h3 a:hover {
+    text-decoration: underline;
+}
+.blog-text a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition:.5s;
+}
+.blog-text a i {
+    top: 2px;
+    position: relative;
+    right: -5px;
+}
+.blog-text a:hover {
+    color: #171717;
+}
 /* Contact Section */
 .contact-form {
     padding: 30px;
@@ -656,7 +725,16 @@ button:focus {
     font-weight: 500;
     margin-bottom: 7px;
 }
-
+.contact-form button {
+    margin-bottom: 20px;
+}
+.contact-form #status {
+    color: #510080;
+    background: rgba(6, 82, 221, 0.07);
+    padding: 10px;
+    font-size: 18px;
+    display: none;
+}
 /* Footer */
 footer {
     text-align: center;
