@@ -493,6 +493,10 @@ button:focus {
 }
 
 /* Couonter Section */
+.counter-section {
+    background: #fff;
+}
+
 .counter-text {
     text-align: center;
 }
