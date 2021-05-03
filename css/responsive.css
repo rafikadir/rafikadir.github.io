@@ -96,11 +96,8 @@
         font-size: 40px;
     }
     .project-menu ul li {
-        margin: 0 10px 10px;
-    }
-    .project-menu ul {
-        padding: 10px !important;
-        border-radius: 0px
+        margin: 0 0px 10px;
+        box-shadow: 0 5px 7px 0 rgb(6 82 221 / 15%);
     }
 
     .contact-form {

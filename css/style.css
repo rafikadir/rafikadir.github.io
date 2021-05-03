@@ -517,6 +517,7 @@ button:focus {
     overflow: hidden;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 .project-box h6 {
     position: absolute;
@@ -526,7 +527,6 @@ button:focus {
     color: #fff;
     padding: 5px 30px;
     margin-bottom: 0;
-    font-family: 'jost';
     transform: translateX(-100%);
     transition: 1s;
 }
@@ -593,9 +593,6 @@ button:focus {
     color: #fff;
 }
 
-.project-box .project-img {
-    border-bottom: 1px solid #ddd;
-}
 #Container .mix {
     display: none;
 }
