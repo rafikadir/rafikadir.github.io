@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
-
+                
 /* Common CSS */
 body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-    color: #232940;
+    color: #737b9a;
     background: #ffffff !important;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -25,10 +25,14 @@ img {
     max-width: 100%;
 }
 p {
-    color: #6D7077;
+    color: #737b9a;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
+}
+
+li {
+    color: #737b9a
 }
 .pt-100 {
     padding-top: 100px;
@@ -112,7 +116,7 @@ button:focus {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 16px;
     color: #171718 !important;
 }
 .navbar-nav .nav-link.active {
@@ -126,7 +130,7 @@ button:focus {
     padding: 15px 0;
     z-index: 999;
     animation: 0.5s ease-in-out fadeInDown;
-    box-shadow: 0 3px 10px 0 rgb(6 82 221 / 10%);
+    box-shadow: 0 5px 35px 0 rgb(6 82 221 / 10%);
 }
 .navbar-brand img {
     max-width: 150px;
@@ -141,11 +145,9 @@ button:focus {
     position: relative;
 }
 .banner-img img {
-    max-width: 100%;
-    border: 10px solid #0652DD;
-    border-radius: 50%;
-    padding: 5px;
+    max-width: 100%; 
 }
+
 .banner-section .banner-text h4 {
     margin-bottom: 30px;
 }
@@ -523,6 +525,17 @@ button:focus {
     margin-right: 10px;
     border-radius: 10px;
 }
+.project-details-box .project-link h4{
+    margin-bottom: 15px !important;
+}
+.project-details-box .project-link ul {
+    margin-bottom: 20px !important;
+    margin-left: 20px !important;
+}
+.project-details-box .project-link ul li {
+    list-style: disc;
+}
+
 .project-box h6 {
     position: absolute;
     top: 20px;
@@ -536,6 +549,9 @@ button:focus {
 }
 .project-box img {
     transition: 1s;
+}
+.project-image-2 {
+    max-width:350px;
 }
 .project-box:hover img {
     transform: scale(.9);

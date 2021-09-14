@@ -1,4 +1,10 @@
 @media only screen and (max-width:575px) {
+    .section-title h2 {
+        font-size:24px;
+    }
+    .section-title h2::before {
+        top: 30px;
+    }
     .navbar {
         padding: 10px 0px !important;
     }
